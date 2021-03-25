@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DFC8443-EE04-4033-B465-E92F512AC3C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JobPortal</RootNamespace>
+    <AssemblyName>JobPortal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About Us.Designer.cs">
+      <DependentUpon>About Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Address.Designer.cs">
+      <DependentUpon>Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminJob.Designer.cs">
+      <DependentUpon>AdminJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPersonalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientPersonalDetails.Designer.cs">
+      <DependentUpon>ClientPersonalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EHistory.Designer.cs">
+      <DependentUpon>EHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowResume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowResume.Designer.cs">
+      <DependentUpon>ShowResume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyCreate.Designer.cs">
+      <DependentUpon>CompanyCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyJob.Designer.cs">
+      <DependentUpon>CompanyJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactUs.Designer.cs">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create.Designer.cs">
+      <DependentUpon>Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateClient.Designer.cs">
+      <DependentUpon>CreateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="EditCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCompany.Designer.cs">
+      <DependentUpon>EditCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EducationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EducationInfo.Designer.cs">
+      <DependentUpon>EducationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClient.Designer.cs">
+      <DependentUpon>ViewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCom.Designer.cs">
+      <DependentUpon>ViewCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobClient.designer.cs">
+      <DependentUpon>JobClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Language.Designer.cs">
+      <DependentUpon>Language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerQualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerQualification.Designer.cs">
+      <DependentUpon>PerQualification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Photograph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Photograph.Designer.cs">
+      <DependentUpon>Photograph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="References.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="References.Designer.cs">
+      <DependentUpon>References.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specialization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specialization.Designer.cs">
+      <DependentUpon>Specialization.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About Us.resx">
+      <DependentUpon>About Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Address.resx">
+      <DependentUpon>Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminJob.resx">
+      <DependentUpon>AdminJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientPersonalDetails.resx">
+      <DependentUpon>ClientPersonalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EHistory.resx">
+      <DependentUpon>EHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowResume.resx">
+      <DependentUpon>ShowResume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyCreate.resx">
+      <DependentUpon>CompanyCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyJob.resx">
+      <DependentUpon>CompanyJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactUs.resx">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create.resx">
+      <DependentUpon>Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateClient.resx">
+      <DependentUpon>CreateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCompany.resx">
+      <DependentUpon>EditCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EducationInfo.resx">
+      <DependentUpon>EducationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewClient.resx">
+      <DependentUpon>ViewClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCom.resx">
+      <DependentUpon>ViewCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobClient.resx">
+      <DependentUpon>JobClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Language.resx">
+      <DependentUpon>Language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerQualification.resx">
+      <DependentUpon>PerQualification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photograph.resx">
+      <DependentUpon>Photograph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="References.resx">
+      <DependentUpon>References.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specialization.resx">
+      <DependentUpon>Specialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
